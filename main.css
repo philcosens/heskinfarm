@@ -23,25 +23,52 @@ p {
 }
 
 .navbar {
-    background-color: rgba(255,255,255,.85);
+    background-color: rgba(255,255,255,0.99);
     padding: 0 0.5rem;
 }
 
 .navbar-brand {  
-    background-image: url("../img/logo.png");
-    background-position: 0px 8px;
+    background-image: url("../img/hf-logo.png");
+    background-position: 0px 7px;
     background-repeat: no-repeat;
-    background-size: 60px;
+    background-size: 50px;
     display: block;
-    padding: 0 0 0 80px;
+    font-family: 'Georgia, serif';
+    padding: 4px 0 0 60px;
+    position: relative;
+    top: 0px;
+    
+    font-size: 20px;
+}
+.navbar .navbar-brand {
+    color: #344b62;
+}
+.navbar-brand span { 
+    color: #afa278;
+    display: block;
+    font-family: 'Georgia, serif';
+    font-size: 15px;
+    position: relative;
+    top: -8px;
 }
 
-.navbar-brand span { 
-    color: #5e5e5e;
-    display: block;
-    position: relative;
-    top: -10px;
+.navbar-light .navbar-nav .nav-link {
+    color: #344b62;
+    font-size: 18
+    
+    px;
+    line-height: 20px;
+    margin: 8px 0 8px;
+    text-align: center;
+    text-transform: uppercase;
 }
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #afa278;
+}
+.navbar-collapse { padding-bottom: 16px; }
 
 .container--main {
     margin: 24px auto;
@@ -55,17 +82,16 @@ p {
     margin: 24px 0 0;
 }
 
-/* Slider Styles */
-@media (min-width: 1200px) {
-    .carousel-inner {
-        margin: auto;
-        max-height: 500px;
-        max-width: 1400px;
-    }
-}
+/* Home page carousel banner images */
+.banner1 { background-image: url('../img/banner/banner1_mobile.png') !important; }
+.banner2 { background-image: url('../img/banner/banner2_mobile.png') !important; }
+.banner3 { background-image: url('../img/banner/banner3_mobile.png') !important; }
 
+
+/* Slider Styles */
 .carousel-item {
-  height: 100vh;
+  height: 100vh; /* Full Height */
+  /* height: 70vh; */
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -84,13 +110,39 @@ p {
 .carousel-caption {
     left: 4%;
     right: 4%;
-    bottom: 5%;
+    bottom: 8%;
 }
 
 .carousel .btn { 
     font-size: 12px;
     text-transform: uppercase;
 }
+
+/* Deskop Specific Styles  */
+@media (min-width: 992px) {
+    .carousel-inner {
+        margin: auto;
+        max-height: 420px;
+    }
+
+    .carousel-item {
+        height: 420px;
+    }
+
+    .banner1 { background-image: url('../img/banner/banner1_desktop.png') !important; }
+    .banner2 { background-image: url('../img/banner/banner2_desktop.png') !important; }
+    .banner3 { background-image: url('../img/banner/banner3_desktop.png') !important; }
+
+    .carousel-item h3  {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .carousel-caption {
+        margin: auto;
+        width: 480px;
+    }
+}
+
 
 .contact__menu {
     background-image: url("../img/phone_icon.png");
@@ -119,17 +171,34 @@ p {
     overflow: hidden;
 }
 
+.reviews {
+    padding: 16px 10%;
+    text-transform: uppercase;    
+}
+
+.reviews p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .contactDetails {
     color: #fff;
     float: left;
     margin-right: 24px;
 }
 
-#pixlee_container {
+.contactDetails__head {
+    font-weight: bold;
+    margin: 16px 0 16px 0;
+}
+
+/*    
+#pixlee_container 
     float: left;
     height: 126px;
-    width: 300px;
+    width: 100%;
 }
+*/
 
 .footer,
 .footer__container {
@@ -138,7 +207,7 @@ p {
 .footer__bottom {
     background-color: #222222;
     display: block;
-    height: 60px;
+    height: 40px;
     overflow: hidden;
     width: 100%;
 }
