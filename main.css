@@ -29,9 +29,9 @@ p {
 
 .navbar-brand {  
     background-image: url("../img/hf-logo.png");
-    background-position: 0px 7px;
+    background-position: 0px 6px;
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 55px;
     display: block;
     font-family: 'Georgia, serif';
     padding: 4px 0 0 60px;
@@ -86,7 +86,6 @@ p {
 .banner1 { background-image: url('../img/banner/banner1_mobile.png') !important; }
 .banner2 { background-image: url('../img/banner/banner2_mobile.png') !important; }
 .banner3 { background-image: url('../img/banner/banner3_mobile.png') !important; }
-
 
 /* Slider Styles */
 .carousel-item {
@@ -182,23 +181,13 @@ p {
 }
 
 .contactDetails {
-    color: #fff;
-    float: left;
-    margin-right: 24px;
+    color: #fff;    
 }
 
 .contactDetails__head {
     font-weight: bold;
     margin: 16px 0 16px 0;
 }
-
-/*    
-#pixlee_container 
-    float: left;
-    height: 126px;
-    width: 100%;
-}
-*/
 
 .footer,
 .footer__container {
@@ -218,3 +207,28 @@ p {
     line-height: 44px;
     text-transform: uppercase;
 }
+
+.instafeed { padding: 0; }
+
+.instafeed li {    
+    margin-bottom: 5px;
+    margin-right: 2%;
+    overflow: hidden;
+    width: 23%;    
+}
+
+.instafeed li a {
+    width: auto;
+}
+.instafeed li img {
+    width: 100%;
+}
+
+/*.instagram__imageWrap {
+    float: left;
+}
+
+.instagram__imgLink img {
+    margin: auto;
+    width: 22%;
+}*/
