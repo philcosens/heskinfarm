@@ -1,4 +1,5 @@
-html {
+html,
+html body {
     font-family: 'Georgia, serif';
 }
 
@@ -24,6 +25,7 @@ p {
 
 .navbar {
     background-color: rgba(255,255,255,0.99);
+    border-bottom: 1px solid #afa278;
     padding: 0 0.5rem;
 }
 
@@ -68,14 +70,15 @@ p {
 .navbar-light .navbar-nav .show>.nav-link {
     color: #afa278;
 }
-.navbar-collapse { padding-bottom: 16px; }
 
 .container--main {
     margin: 24px auto;
 }
 
-.row--zones btn {
-    margin: 24px 0;
+.row--zones a {    
+    bottom: 0;
+    left: 16px;    
+    position: absolute;
 }
 
 .row--zones img {
@@ -119,6 +122,13 @@ p {
 
 /* Deskop Specific Styles  */
 @media (min-width: 992px) {
+    h1 {
+        font-size: 3rem;
+        margin: 32px;
+    }
+    .navbar {
+        border-bottom: 3px solid #afa278;
+    }
     .carousel-inner {
         margin: auto;
         max-height: 420px;
@@ -139,6 +149,9 @@ p {
     .carousel-caption {
         margin: auto;
         width: 480px;
+    }
+    .row--zones p {
+        margin-bottom: 60px;
     }
 }
 
@@ -170,6 +183,9 @@ p {
     overflow: hidden;
 }
 
+.location {
+    margin-top: 40px;
+}
 .reviews {
     padding: 16px 10%;
     text-transform: uppercase;    
@@ -181,7 +197,8 @@ p {
 }
 
 .contactDetails {
-    color: #fff;    
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .contactDetails__head {
@@ -208,7 +225,10 @@ p {
     text-transform: uppercase;
 }
 
-.instafeed { padding: 0; }
+.instafeed { 
+    margin: 8px 0;
+    padding: 0; 
+}
 
 .instafeed li {    
     margin-bottom: 5px;
@@ -232,3 +252,23 @@ p {
     margin: auto;
     width: 22%;
 }*/
+
+.social {
+    margin-top: 16px;
+}
+
+.social__head {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.socialIconsWrap {
+    margin: 16px auto 8px;
+    overflow: hidden;
+}
+
+.socialIcons a { 
+    float: left;
+    margin-right: 8px;
+}
