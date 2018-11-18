@@ -158,6 +158,7 @@ p {
     .row--zones p {
         margin-bottom: 60px;
     }
+    
 }
 
 
@@ -199,6 +200,19 @@ p {
 .reviews p {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 0;
+}
+.googleMapsWrap {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.googleMaps {
+    height: 100%;
+    margin: auto;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 96%;
 }
 
 .contactDetails {
@@ -258,10 +272,10 @@ p {
 
 .socialIconsWrap {
     bottom: 0;
-    left: 16px;
-    margin: 16px auto 8px;
+    left: 0;
+    margin: 16px auto;
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .socialIcons a {     
