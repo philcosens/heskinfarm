@@ -30,18 +30,18 @@ p {
 }
 
 .navbar-brand {  
-    background-image: url("../img/hf-logo.png");
-    background-position: 0px 6px;
+    background-image: url(../img/hf-logo.png);
+    background-position: 0px 2px;
     background-repeat: no-repeat;
     background-size: 55px;
     display: block;
     font-family: 'Georgia, serif';
-    padding: 4px 0 0 60px;
+    padding: 0 0 0 62px;
     position: relative;
-    top: 0px;
-    
-    font-size: 20px;
+    top: 6px;
+    font-size: 1.4rem;
 }
+
 .navbar .navbar-brand {
     color: #344b62;
 }
@@ -49,39 +49,36 @@ p {
     color: #afa278;
     display: block;
     font-family: 'Georgia, serif';
-    font-size: 15px;
+    font-size: 17px;
     position: relative;
-    top: -8px;
+    top: -10px;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #344b62;
-    font-size: 18
-    
-    px;
+    font-family: arial;
     line-height: 20px;
     margin: 8px 0 8px;
     text-align: center;
     text-transform: uppercase;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #afa278;
+}
 .navbar-light .navbar-nav .active>.nav-link, 
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #afa278;
+    color: #afa278;    
 }
 
 .container--main {
     margin: 24px auto;
 }
 
-.row--zones a {    
-    bottom: 0;
-    left: 16px;    
-    position: absolute;
-}
-
 .row--zones img {
+    border: 1px solid #343a40;
+    border-radius: 3px;
     margin: 24px 0 0;
 }
 
@@ -121,13 +118,16 @@ p {
 }
 
 /* Deskop Specific Styles  */
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     h1 {
         font-size: 3rem;
         margin: 32px;
     }
     .navbar {
         border-bottom: 3px solid #afa278;
+    }
+    .navbar-nav {
+        margin-top: 6px;
     }
     .carousel-inner {
         margin: auto;
@@ -149,6 +149,11 @@ p {
     .carousel-caption {
         margin: auto;
         width: 480px;
+    }
+    .row--zones a {    
+       bottom: 0;
+        left: 16px;    
+        position: absolute;
     }
     .row--zones p {
         margin-bottom: 60px;
@@ -197,17 +202,18 @@ p {
 }
 
 .contactDetails {
-    color: #fff;
-    text-transform: uppercase;
+    color: #fff;    
 }
 
-.contactDetails__head {
+.footer__head {
+    color: #fff;
     font-weight: bold;
     margin: 16px 0 16px 0;
 }
 
 .footer,
 .footer__container {
+    font-family: arial;
     overflow: hidden;
 }
 .footer__bottom {
@@ -244,19 +250,6 @@ p {
     width: 100%;
 }
 
-/*.instagram__imageWrap {
-    float: left;
-}
-
-.instagram__imgLink img {
-    margin: auto;
-    width: 22%;
-}*/
-
-.social {
-    margin-top: 16px;
-}
-
 .social__head {
     color: #fff;
     font-weight: bold;
@@ -264,11 +257,26 @@ p {
 }
 
 .socialIconsWrap {
+    bottom: 0;
+    left: 16px;
     margin: 16px auto 8px;
     overflow: hidden;
+    position: absolute;
 }
 
-.socialIcons a { 
+.socialIcons a {     
+    background: url(../img/social-bar.png) no-repeat;
+    height: 35px;
+    margin-right: 10px;
     float: left;
-    margin-right: 8px;
+    padding: 0;
+    width: 35px;
+}
+
+.socialIcons .facebook {
+    background-position: -48px 0;
+}
+
+.socialIcons .instagram {
+    background-position: -190px 0;
 }
