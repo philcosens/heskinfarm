@@ -1,3 +1,10 @@
+:target {
+ 
+padding-top: 79px;
+margin-top: -79px;
+
+}
+
 html,
 html body {
     font-family: 'Georgia, serif';
@@ -6,11 +13,18 @@ html body {
 h1 {
     color: #afa278;
     font-family: 'Georgia, serif';
-    font-size: 40px;
+    font-size: 34px;
     line-height: 46px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     text-align: center;
 }
+  
+.container--mainHome h1 {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 24px;
+}
+
 h2 {
     color: #afa278;
     font-size: 1.6rem;
@@ -71,9 +85,8 @@ p {
 .navbar-light .navbar-nav .show>.nav-link {
     color: #afa278;    
 }
-
 .container--main {
-    margin: 24px auto;
+    margin: 70px 0 24px;
 }
 
 .row--zones img {
@@ -158,7 +171,13 @@ p {
     .row--zones p {
         margin-bottom: 60px;
     }
-    
+
+    .container--main {
+        margin: 90px auto 24px;
+    }
+    .container--mainHome {
+        margin: 24px auto;
+    }    
 }
 
 
@@ -202,11 +221,24 @@ p {
     line-height: 2rem;
     margin-bottom: 0;
 }
+.reviews span {
+    display: none;
+    font-size: 12px;    
+    text-align: right;
+}
 .googleMapsWrap {
     margin-top: 8px;
     margin-bottom: 24px;
 }
 .googleMaps {
+    height: 100%;
+    margin: auto;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 96%;
+}
+.container--mainHome .googleMaps {
     height: 100%;
     margin: auto;
     min-height: 200px;
@@ -293,4 +325,25 @@ p {
 
 .socialIcons .instagram {
     background-position: -190px 0;
+}
+
+/* Rates */
+caption { 
+    display: table-caption;
+    text-align: center;
+}
+
+.table thead td {
+    font-weight: bold;
+    border-top: 0;
+    border-bottom: 2px solid #afa278;
+}
+
+.tab-side-3 {
+    width: 25%;
+}
+
+.textBI {
+    font-style: italic;
+    font-weight: bold;
 }
