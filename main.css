@@ -117,6 +117,12 @@ p a {
 /* Rooms page banner */
 .rooms1 { background-image: url('../img/banner/banner3_mobile.png') !important; }
 
+ /* Rates page banner */
+.rates1 { background-image: url('../img/banner/banner4_mobile.png') !important; }
+
+/* Contact page banner */
+.contact1 { background-image: url('../img/banner/banner2_mobile.png') !important; }
+
 /* Slider Styles */
 .carousel-item {
   height: 100vh; /* Full Height */
@@ -183,6 +189,11 @@ p a {
     /* Rooms page banner */
     .rooms1 { background-image: url('../img/banner/banner3_desktop.png') !important; }
 
+    /* Rates page banner */
+    .rates1 { background-image: url('../img/banner/banner4_desktop.png') !important; }
+
+    /* Contact page banner */
+    .contact1 { background-image: url('../img/banner/banner2_desktop.png') !important; }
 
     .carousel-item h3  {
         font-size: 50px;
