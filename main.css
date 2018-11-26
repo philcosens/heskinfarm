@@ -165,6 +165,9 @@ p a {
     right: 4%;
     bottom: 0;
 }
+.carousel--home .carousel-caption {
+    bottom: 8%;
+}
 
 .carousel .btn { 
     font-size: 12px;
@@ -200,6 +203,7 @@ p a {
     .carousel--home .carousel-item,
     .carousel-item {
         height: 420px;
+	border-bottom: 3px solid #afa278;
     }
 
     .banner1 { background-image: url('../img/banner/banner1_desktop.jpg') !important; }
