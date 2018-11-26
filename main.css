@@ -1,8 +1,6 @@
 :target {
- 
-padding-top: 79px;
-margin-top: -79px;
-
+    padding-top: 79px;
+    margin-top: -79px;
 }
 
 html,
@@ -80,12 +78,17 @@ p a {
 }
 
 .navbar-light .navbar-nav .nav-link {
+    border-bottom: 1px solid #f0f0f0;
     color: #344b62;
     font-family: arial;
     line-height: 20px;
-    margin: 8px 0 8px;
+    margin: 4px 0 4px;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 18px;
+}
+.navbar-light .nav-item:last-child .nav-link {
+    border-bottom: 0;
 }
 .navbar-light .navbar-nav .nav-link:hover {
     color: #afa278;
@@ -96,6 +99,11 @@ p a {
 .navbar-light .navbar-nav .show>.nav-link {
     color: #afa278;    
 }
+
+.nav-item .nav-link {
+    border-bottom: 1px solid #f0f0f0;
+}
+
 .container--main {
     margin: 24px 0 24px;
 }
@@ -107,25 +115,31 @@ p a {
 }
 
 /* Home page carousel banner images */
-.banner1 { background-image: url('../img/banner/banner1_mobile.png') !important; }
-.banner2 { background-image: url('../img/banner/banner2_mobile.png') !important; }
-.banner3 { background-image: url('../img/banner/banner3_mobile.png') !important; }
+.banner1 { background-image: url('../img/banner/banner1_mobile.jpg') !important; }
+.banner2 { background-image: url('../img/banner/banner2_mobile.jpg') !important; }
+.banner3 { background-image: url('../img/banner/banner3_mobile.jpg') !important; }
 
 /* Attractions page banner */
-.attractions1 { background-image: url('../img/attractions/canal1_mobile.png') !important; }
+.attractions1 { 
+    background-image: url('../img/attractions/canal1_mobile.jpg') !important;     
+}
+.carousel-item.attractions1 {
+    background-position-y: 0;
+}
 
 /* Rooms page banner */
-.rooms1 { background-image: url('../img/banner/banner3_mobile.png') !important; }
+.rooms1 { background-image: url('../img/banner/banner3_mobile.jpg') !important; }
 
  /* Rates page banner */
-.rates1 { background-image: url('../img/banner/banner4_mobile.png') !important; }
+.rates1 { background-image: url('../img/banner/banner4_mobile.jpg') !important; }
 
 /* Contact page banner */
-.contact1 { background-image: url('../img/banner/banner2_mobile.png') !important; }
+.contact1 { background-image: url('../img/banner/banner2_mobile.jpg') !important; }
 
 /* Slider Styles */
+
 .carousel-item {
-  height: 100vh; /* Full Height */
+  height: 50vh; /* Full Height */
   /* height: 70vh; */
   min-height: 300px;
   background: no-repeat center center scroll;
@@ -133,6 +147,10 @@ p a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.carousel--home .carousel-item {
+  height: 100vh;
 }
 
 .carousel-item h3 {
@@ -145,7 +163,7 @@ p a {
 .carousel-caption {
     left: 4%;
     right: 4%;
-    bottom: 8%;
+    bottom: 0;
 }
 
 .carousel .btn { 
@@ -170,39 +188,46 @@ p a {
     .navbar-nav {
         margin-top: 6px;
     }
+    .navbar-light .navbar-nav .nav-link {
+        border-bottom: 0;       
+        margin: 8px 16px;
+        padding: 0;
+    }
     .carousel-inner {
         margin: auto;
         max-height: 420px;
     }
-
+    .carousel--home .carousel-item,
     .carousel-item {
         height: 420px;
     }
 
-    .banner1 { background-image: url('../img/banner/banner1_desktop.png') !important; }
-    .banner2 { background-image: url('../img/banner/banner2_desktop.png') !important; }
-    .banner3 { background-image: url('../img/banner/banner3_desktop.png') !important; }
+    .banner1 { background-image: url('../img/banner/banner1_desktop.jpg') !important; }
+    .banner2 { background-image: url('../img/banner/banner2_desktop.jpg') !important; }
+    .banner3 { background-image: url('../img/banner/banner3_desktop.jpg') !important; }
     
     /* Attractions page banner */
-    .attractions1 { background-image: url('../img/attractions/canal1_desktop.png') !important; }
+    .attractions1 { background-image: url('../img/attractions/canal1_desktop.jpg') !important; }
 
     /* Rooms page banner */
-    .rooms1 { background-image: url('../img/banner/banner3_desktop.png') !important; }
+    .rooms1 { background-image: url('../img/banner/banner3_desktop.jpg') !important; }
 
     /* Rates page banner */
-    .rates1 { background-image: url('../img/banner/banner4_desktop.png') !important; }
+    .rates1 { background-image: url('../img/banner/banner4_desktop.jpg') !important; }
 
     /* Contact page banner */
-    .contact1 { background-image: url('../img/banner/banner2_desktop.png') !important; }
+    .contact1 { background-image: url('../img/banner/banner2_desktop.jpg') !important; }
 
     .carousel-item h3  {
         font-size: 50px;
         line-height: 60px;
     }
     .carousel-caption {
+        bottom: 8%;
         margin: auto;
         width: 480px;
     }
+
     .row--zones a {    
        bottom: 0;
         left: 16px;    
@@ -218,34 +243,6 @@ p a {
     .container--mainHome {
         margin: 24px auto;
     }    
-}
-
-
-.contact__menu {
-    background-image: url("../img/phone_icon.png");
-    background-repeat: no-repeat;
-    background-color: #efefef;
-    background-size: 36px;
-    border: 1px solid #cccccc;
-    height: 50px;
-    left: 0;
-    position: fixed;
-    top: 50%;
-    width: 40px;
-}
-
-.contact__number {
-    display: none;
-}
-.contact__number.show {
-    display: block;
-}
-
-.py-5.bg-dark {
-    overflow: hidden;
-}
-.py-5.bg-dark .container {
-    overflow: hidden;
 }
 
 .location {
