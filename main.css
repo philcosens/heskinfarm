@@ -104,6 +104,26 @@ p a {
     border-bottom: 1px solid #f0f0f0;
 }
 
+.navbar-telephone--mob img {        
+    width: 36px;
+}
+
+.navbar-telephone--desktop {
+    display: none;
+    background-image: url(../img/phone_icon_small.png);
+    background-position-y: 6px;
+    background-repeat: no-repeat;
+    background-size: 34px;    
+    color: #afa278;   
+    font-weight: bold;
+    font-size: 22px;
+    height: 44px;
+    line-height: 48px;    
+    margin-right: 10px;
+    padding-left: 50px;
+    width: 200px;
+}
+
 .container--main {
     margin: 24px 0 24px;
 }
@@ -188,13 +208,22 @@ p a {
     .navbar {
         border-bottom: 3px solid #afa278;
     }
+    .navbar-brand {
+        width: 200px;
+    }
     .navbar-nav {
-        margin-top: 6px;
+        margin: 6px auto 0;
     }
     .navbar-light .navbar-nav .nav-link {
         border-bottom: 0;       
         margin: 8px 16px;
         padding: 0;
+    }
+    .navbar-telephone--desktop { 
+        display: block; 
+    }
+    .navbar-telephone--mob { 
+        display: none; 
     }
     .carousel-inner {
         margin: auto;
