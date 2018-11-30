@@ -17,7 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->    
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
   </head>
 
@@ -52,12 +52,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
 						</li>					
-					</ul>						
-					<!--<div class="navbar-telephone">
-						<a href="tel:01704894437">							
-							01704894437
-						</a>
-					</div>-->
+					</ul>					
 				</div>
 				<div class="navbar-telephone--desktop">
 					01704894437							
@@ -66,41 +61,38 @@
     </nav>
 
     <header>
-      <div id="carouselExampleIndicators" class="carousel carousel--home slide" data-ride="carousel">
+      <div id="carousel" class="carousel carousel--home slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item banner1 active" style="">
+          <div class="carousel-item banner1 active">
             <div class="carousel-caption d-md-block">
               <h3>Family Run<br/>
                 Bed & Breakfast</h3>
               <a class="btn btn-dark" href="#welcome">Find out more</a>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item banner2" style="">
+          <div class="carousel-item banner2">
               <div class="carousel-caption d-md-block">
 			  				<h3>Beautiful Surrounding Landscapes</h3>
               	<a class="btn btn-dark" href="#location">Explore the local area</a>		
             	</div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item banner3" style="">
+          </div>          
+          <div class="carousel-item banner3">
             <div class="carousel-caption d-md-block">
               <h3>Renovated 1794 Farmhouse</h3>
 			  			<a class="btn btn-dark" href="rooms.html">See our fantastic rooms</a>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -109,145 +101,139 @@
 
     <!-- Page Content -->
     <section>
-      	<div class="container container--main">
-			<h1 id="welcome" name="welcome">Welcome to Heskin Farm</h1>
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content col-lg-8 col-md-12 align-self-center">
-					<div class="title text-center">					
-						<p>
-							Charlotte and Les offer a warm and friendly welcome at their small family run bed & breakfast in Burscough.  For over 25 years, their renovated 1794 farmhouse family home, have offered plenty of  parking for several cars, beautifully decorated traditional rooms, a seat in the breakfast kitchen with plenty of conversation and a good cooked breakfast
-							Heskin Farm was awarded the highest food hygiene rating 5
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-8 col-md-12 align-self-center">
-					<hr>
-					<div class="reviews slider">
-						<p class="text-center">"A lovely place with very nice touches making a stay feel like home from home"
-							<span>Steve H - Tripadvisor</span>
-						</p>
-					</div>
-					<hr>
-				</div>
-			</div>
-			
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-9 col-md-12 align-self-center">
-					<p class="text-center">						
-						Our Guests are very important to us with visitors from all over the world, returning time and time again over the years. Being described as a ‘little gem’ by many.
-						We may not be the best but we try our very best – for everyone
-					</p>
-				</div>
-			</div>			
-			
-			<div class="row row--zones justify-content-center">
-				<div class="col-lg-3">
-					<img class="img-circle lazy" data-src="./img/home/bedroom1.jpg" alt="Heskin Farm Bedroom" width="100%" height="auto">
-					<h2>Rooms</h2>
-					<p>
-						Our Rooms are en-suite and two have Bath/Shower facilities. We have double, family, twin or single rooms. All Rooms also include Television, Tea and Coffee making facilities...
-					</p>
-					<a class="btn btn-dark" href="rooms.html" role="button">Find out more</a>
-				</div>
-				
-				<div class="col-lg-3">
-					<img class="img-circle lazy" data-src="./img/home/attractions1.jpg" alt="Canal in Burscough" width="100%" height="auto">
-					<h2>Attractions</h2>
-					<p>
-						Situated in Lathom, the farmhouse is surrounded by beautiful landscapes, nearby canal walks with Burscough Village 
-						just a short few minutes walk away offering a good selection of Pubs and eateries...
-					</p>
-					<a class="btn btn-dark" href="attractions.html" role="button">Find out more</a>
-				</div>
-
-				<div class="col-lg-3">
-					<img class="img-circle lazy" data-src="./img/home/breakfast1.jpg" alt="Heskin Farm Breakfast" width="100%" height="auto">
-					<h2>Rates & Breakfast</h2>
-					<p>
-						Tea & Coffee facilities are in your room. Breakfast is served in the big farm house kitchen where chatter and laughter, mixed with the lovely smells of cooking gives a wonderful family atmosphere...
-					</p>
-					<a class="btn btn-dark" href="rates.html" role="button">Find out more</a>
-				
-				</div>
-			</div>
-			<div class="row justify-content-center location">
-				<div class="col-md-8">
-					<hr>
-						<div class="reviews slider">
+      <div class="container container--main">
+				<h1 id="welcome" name="welcome">Welcome to Heskin Farm</h1>
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content col-lg-8 col-md-12 align-self-center">
+						<div class="title text-center">					
 							<p>
-								"We have been here many times and wouldn’t dream of staying anywhere else in this part of the UK"
-								<span>Roving221454 - Tripadvisor</span>
+								Charlotte and Les offer a warm and friendly welcome at their small family run bed & breakfast in Burscough.  For over 25 years, their renovated 1794 farmhouse family home, have offered plenty of  parking for several cars, beautifully decorated traditional rooms, a seat in the breakfast kitchen with plenty of conversation and a good cooked breakfast
+								Heskin Farm was awarded the highest food hygiene rating 5
 							</p>
 						</div>
-					<hr>
-				</div>
-			</div>
-			<div id="location" class="row justify-content-center">
-				<div class="col-md-5 googleMapsWrap">
-					<div id="map" class="googleMaps"></div>
-				</div>
-				<div class="col-md-4">
-					<p>
-						Heskin Farm is a peaceful location off the A59 Liverpool to Preston main road with the M58 and M6 motorways in easy driving distance.
-					</p>
-					<p>
-						Nearby are Burscough Bridge and Burscough Junction train Stations making Heskin Farm commutable to Southport, Manchester ( inc Airport ) and Preston.
-					</p>
-					<p>
-						Liverpool being 19miles away is easy reachable from Ormskirk train station being just a few miles away.
-					</p>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-
-
-
-    <!-- Footer -->
-    <footer class="bg-dark footer">
-      	<div class="container footer__container">
-          	<div class="row justify-content-center">           									
-						
-				<div class="col-sm-12 col-md-5 order-md-2 social">
-        			<div class="footer__head">Follow us on Instagram</div>
-					<ul id="instafeed" class="instafeed d-flex flex-wrap"></ul>
-				</div>
-
-				<div class="col-sm-12 col-md-4 order-md-1 contactDetails">
-            		<div class="footer__head">Contact us</div>
-              		<div class="footer__text">
-						Heskin Farm B&B <br/>
-						School Lane,<br/>
-						Lathom,<br/>
-						Ormskirk, <br/>
-						L40 4AF<br/>
-						Tel: <a href="tel:01704894437">01704 894437</a>
 					</div>
-					<div class="socialIconsWrap">
-						<div class="socialIcons">		
-							<a class="facebook socialIcon" href="https://www.facebook.com/heskinFarm/" target="_blank"></a>
-							<a class="instagram socialIcon" href="https://www.instagram.com/heskinfarm/" target="_blank"></a>
-						</div>
-        	</div>
 				</div>
-			</div>	
-		</div>  
-		<!-- /.container -->		  
-	  	<div class="footer__bottom">
-			<p class="col-lg-12 m-0 text-center">Copyright &copy; Heskin Farm 2018. All rights reserved.</p>
-		</div>
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-   	<script src="js/main.js"></script>
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-8 col-md-12 align-self-center">
+						<hr>
+						<div class="reviews slider">
+							<p class="text-center">"A lovely place with very nice touches making a stay feel like home from home"
+								<span>Steve H - Tripadvisor</span>
+							</p>
+						</div>
+						<hr>
+					</div>
+				</div>
+			
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-9 col-md-12 align-self-center">
+						<p class="text-center">						
+							Our Guests are very important to us with visitors from all over the world, returning time and time again over the years. Being described as a ‘little gem’ by many.
+							We may not be the best but we try our very best – for everyone
+						</p>
+					</div>
+				</div>			
+			
+				<div class="row row--zones justify-content-center">
+					<div class="col-lg-3">
+						<img class="img-circle lazy" data-src="./img/home/bedroom1.jpg" alt="Heskin Farm Bedroom" width="100%" height="auto">
+						<h2>Rooms</h2>
+						<p>
+							Our Rooms are en-suite and two have Bath/Shower facilities. We have double, family, twin or single rooms. All Rooms also include Television, Tea and Coffee making facilities...
+						</p>
+						<a class="btn btn-dark" href="rooms.html" role="button">Find out more</a>
+					</div>
+					
+					<div class="col-lg-3">
+						<img class="img-circle lazy" data-src="./img/home/attractions1.jpg" alt="Canal in Burscough" width="100%" height="auto">
+						<h2>Attractions</h2>
+						<p>
+							Situated in Lathom, the farmhouse is surrounded by beautiful landscapes, nearby canal walks with Burscough Village 
+							just a short few minutes walk away offering a good selection of Pubs and eateries...
+						</p>
+						<a class="btn btn-dark" href="attractions.html" role="button">Find out more</a>
+					</div>
+
+					<div class="col-lg-3">
+						<img class="img-circle lazy" data-src="./img/home/breakfast1.jpg" alt="Heskin Farm Breakfast" width="100%" height="auto">
+						<h2>Rates & Breakfast</h2>
+						<p>
+							Tea & Coffee facilities are in your room. Breakfast is served in the big farm house kitchen where chatter and laughter, mixed with the lovely smells of cooking gives a wonderful family atmosphere...
+						</p>
+						<a class="btn btn-dark" href="rates.html" role="button">Find out more</a>
+					
+					</div>
+				</div>
+				<div class="row justify-content-center location">
+					<div class="col-md-8">
+						<hr>
+							<div class="reviews slider">
+								<p>
+									"We have been here many times and wouldn’t dream of staying anywhere else in this part of the UK"
+									<span>Roving221454 - Tripadvisor</span>
+								</p>
+							</div>
+						<hr>
+					</div>
+				</div>
+				<div id="location" class="row justify-content-center">
+					<div class="col-md-5 googleMapsWrap">
+						<div id="map" class="googleMaps"></div>
+					</div>
+					<div class="col-md-4">
+						<p>
+							Heskin Farm is a peaceful location off the A59 Liverpool to Preston main road with the M58 and M6 motorways in easy driving distance.
+						</p>
+						<p>
+							Nearby are Burscough Bridge and Burscough Junction train Stations making Heskin Farm commutable to Southport, Manchester ( inc Airport ) and Preston.
+						</p>
+						<p>
+							Liverpool being 19miles away is easy reachable from Ormskirk train station being just a few miles away.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-dark footer">
+			<div class="container footer__container">
+				<div class="row justify-content-center">           															
+					<div class="col-sm-12 col-md-5 order-md-2 social">
+						<div class="footer__head">Follow us on Instagram</div>
+						<ul id="instafeed" class="instafeed d-flex flex-wrap"></ul>
+					</div>
+
+					<div class="col-sm-12 col-md-4 order-md-1 contactDetails">
+						<div class="footer__head">Contact us</div>
+						<div class="footer__text">
+							Heskin Farm B&B <br/>
+							School Lane,<br/>
+							Lathom,<br/>
+							Ormskirk, <br/>
+							L40 4AF<br/>
+							Tel: <a href="tel:01704894437">01704 894437</a>
+						</div>
+						<div class="socialIconsWrap">
+							<div class="socialIcons">		
+								<a class="facebook socialIcon" href="https://www.facebook.com/heskinFarm/" target="_blank"></a>
+								<a class="instagram socialIcon" href="https://www.instagram.com/heskinfarm/" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="footer__bottom">
+				<p class="col-lg-12 m-0 text-center">Copyright &copy; Heskin Farm 2018. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
 		<!-- Google Maps -->
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_0cuNk0qxDMAikUvJ9ZNEZJGb0D_nU0E&callback=initMap" type="text/javascript"></script>			
   </body>  
