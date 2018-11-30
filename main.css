@@ -220,7 +220,8 @@ p a {
         padding: 0;
     }
     .navbar-telephone--desktop { 
-        display: block; 
+        display: block;
+        margin: auto;
     }
     .navbar-telephone--mob { 
         display: none; 
