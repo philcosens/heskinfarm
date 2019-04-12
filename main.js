@@ -7,5 +7,5 @@ var myLazyLoad = new LazyLoad({ elements_selector: ".lazy" });
 // Google Maps Initialise
 var map; function initMap() { map = new google.maps.Map(document.getElementById('map'), { center: {lat: 53.601480, lng: -2.832134}, zoom: 17 }); }
 // Instafeed Initialise
-var feed = new Instafeed({ get: 'user', userId: 8991517967, clientId: 'bece0bb1ed7e4f68b6fac5d2848345c5', accessToken: '8991517967.bece0bb.12aa44d004224683a26e33f8e8b6f81b', template: '<li><a class="instagram__imgLink" href="{{link}}"><img src="{{image}}" /></a></li>', limit: 8 });
+var feed = new Instafeed({ get: 'user', userId: 8991517967, clientId: 'bece0bb1ed7e4f68b6fac5d2848345c5', accessToken: '8991517967.1677ed0.71ea7082c3c34876aa5220a98b33cad5', template: '<li><a class="instagram__imgLink" href="{{link}}"><img src="{{image}}" /></a></li>', limit: 8 });
 feed.run();
